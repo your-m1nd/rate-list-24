@@ -1,0 +1,20 @@
+  .rate {
+   width: 25%;
+   border: 3px solid black;
+  }
+  
+  img {
+    width: 200px;
+    height: 120px;
+  }
+
+  /*.pressed {
+    border: 5px solid orange;
+    font-weight: bolder;
+    font-size: large;
+  }
+  */
+
+  .rate-choose {
+    font-weight: bolder;
+  }
