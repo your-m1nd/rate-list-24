@@ -6,7 +6,7 @@ const Rate = (props)  => {
         
         return (
             //добавили по клику изменение тарифа (пока только текст)
-        <section className={"rate"} id={id} onClick={()=>{onClick(id)}} selectedId={selectedId ? 'Тариф выбран' : 'Тариф не выбран'}>
+        <section className={"rate"} id={id} onClick={()=>{onClick(id)}} selectedId={selectedId}>
         <h2 className="rate-name">{name}</h2>
         <img className="rate-price" src={url} alt={name}></img>
         <p className="rate-speed">{speed}</p>
