@@ -28,7 +28,6 @@ function App() {
       url: "/assets/550.JPG",
       speed: "до 100 Мбит/сек",
       traffic: "Объём включённого трафика не ограничен",
-      isSelected: true,
     },
   
     {
@@ -42,8 +41,10 @@ function App() {
   ];
 
   const [selectedId, setSelectedId] = useState(null);
+  const [isSelected, setSelected] = useState(null);
   const onClick = (id) => {
     setSelectedId(id);
+    setSelected(id);
   }
 
   return (
@@ -51,7 +52,7 @@ function App() {
       <div className="container">
    {
     rateList.map((rate) =>
-    <Rate key={rate.id} id={rate.id} name={rate.name} url={rate.url} speed={rate.speed} traffic={rate.traffic} onClick={onClick} selectedId={selectedId}/>
+    <Rate key={rate.id} id={rate.id} name={rate.name} url={rate.url} speed={rate.speed} traffic={rate.traffic} onClick={onClick} selectedId={selectedId} isSelected={isSelected}/>
     ) 
   }
   </div>
