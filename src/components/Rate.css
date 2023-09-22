@@ -8,12 +8,11 @@
     height: 120px;
   }
 
-  /*.pressed {
+  .selectedId {
     border: 5px solid orange;
     font-weight: bolder;
     font-size: large;
   }
-  */
 
   .rate-choose {
     font-weight: bolder;
